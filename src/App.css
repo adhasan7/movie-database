@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+.Header {
+  background-color: blue;
+}
+.Header ul{
+  display: flex;
+  justify-content: space-around;
+  margin:0 auto;
+  color: white;
+  flex-direction: none;
+  max-width: 15rem;
+  border: 1px solid red;
+}
+.Header ul li {
+  color: white;
+  list-style: none;
+}
+.Footer {
+  background-color: blue;
+  height: auto;
+  margin: auto;
+  width: 100%; 
+}
+.root-app {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.hello {
+  flex: 1;
+}

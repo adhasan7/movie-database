@@ -1,0 +1,28 @@
+.Movie__image {
+    max-width: 100%;
+    border-radius: 25px;
+}
+.Images__title {
+    color: #F72585; 
+}
+.Movie__date {
+    color: red;
+}
+.Movie__genre {
+    color:  red;
+}
+
+@media(min-width:768px){
+  .Movie {
+        flex-basis: 50%;
+    } 
+
+}
+
+@media(min-width:992px){
+    .Movie {
+        flex-basis: 25%;
+        padding: 1rem;
+    }
+   
+}
