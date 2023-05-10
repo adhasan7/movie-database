@@ -1,7 +1,9 @@
+import styles from "./alert.css"
+
 function alert(props){
     return(
         <div>
-            <span>{props.children}</span>
+            <span className={styles.Keterangan}>{props.children}</span>
         </div>
 
     );

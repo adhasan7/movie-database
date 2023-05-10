@@ -2,13 +2,11 @@ import { useState } from "react";
 import styles from "./Herobawah.module.css"
 import { nanoid } from "nanoid";
 function Herobawah( props){
-   const {movies,setMovies}=props;
-   
-
- const [title,setTitle]=useState("");
- const [date,setDate]=useState("");
- const [gambar,setGambar]=useState("");
- const [selectedOption, setSelectedOption] = useState("");
+const {movies,setMovies}=props;
+const [title,setTitle]=useState("");
+const [date,setDate]=useState("");
+const [gambar,setGambar]=useState("");
+const [selectedOption, setSelectedOption] = useState("");
 //  membuat state title dan date error/empty
 
 const [isTitleError,setIsTitleError]=useState(false);
@@ -68,11 +66,7 @@ function hendleSubmit(e){
     
 }
     }
-
-
 //console.log(movies);
-
-
     return (
         <div className={styles.Container}>
             <section className={styles.Herobawah}>
@@ -85,41 +79,41 @@ function hendleSubmit(e){
                     <div className={styles.Hero__content}>
                      <div className={styles.wrapper}>       
                         <div className={styles.form__table}>
-                        < h2 className={styles.Hero__title}>Add Movie</h2> 
+                        <h2 className={styles.Hero__title}>Add Movie</h2> 
                             <form onSubmit={hendleSubmit}>
                             <p className={styles.herokanan__p}>Title</p>
                             <input onChange={hendleTitle}  id="title" 
                             className={styles.input__text}
-                            type="text" value={title}></input>
+                            type="text" value= {title}></input>
                             {/* jika isTitleError true maka akan memunculkan error
                                 jika isTitleError false maka akan memunculkan string kosong
                              */}
-                          {isTitleError && <alert> text wajib diisi</alert> }
+                          {isTitleError && <alert className={styles.keterangan}> text wajib diisi</alert> }
                             <p className={styles.herokanan__p}>Year</p>
                             <input onChange={hendleDate} id="date"
                             className={styles.input__year}
                             type="number" value={date}></input>
-                           {isDateError && <alert>Date wajib diisi</alert> }
+                           {isDateError && <alert className={styles.keterangan}>Date wajib diisi</alert> }
 
-                           {isGambarError && <alert> gambar wajib diisi</alert> }
+                           
                             <p className={styles.herokanan__p}>Gambar</p>
                             <input onChange={hendleGambar} id="poster"
                             className={styles.input__year}
                             type="text" value={gambar}></input>
-                           {isGambarError && <alert>Gambar wajib diisi</alert> } 
+                           {isGambarError && <alert className={styles.keterangan}>Gambar wajib diisi</alert> } 
                           
 
                            <p className={styles.herokanan__p}>Option</p>
                 
                                 <select value={selectedOption} onChange={handleOptionChange} id="type">
-                                     <option value="">--Pilih Option--</option>
-                                         <option value="Action">Action</option>
-                                            <option value="Drama">Drama</option>
-                                                    <option value="Horror">Horror</option>
-                                                    <option value="Comedy">Comedy</option>
+                                     <option className={styles.Wrapper__select} value=""></option> 
+                                         <option className={styles.Wrapper__select} value="Action">Action</option>
+                                            <option className={styles.Wrapper__select} value="Drama">Drama</option>
+                                                <option className={styles.Wrapper__select} value="Horror">Horror</option>
+                                                <option className={styles.Wrapper__select} value="Comedy">Comedy</option>
                                                 </select>
         
-                                                {isSelectError && <alert>Opsition wajib diisi</alert>}
+                                                {isSelectError && <alert className={styles.keterangan}>Opsition wajib diisi</alert>}
                                          
                                         <p>Anda memilih: {selectedOption}</p>
     

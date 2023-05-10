@@ -7,7 +7,7 @@ function Hero(){
             <div className={styles.Hero__left}>
                 <h2 className={styles.Hero__title}>Spaiderman</h2>
                 <h2 className={styles.Hero__genre}>Genre: Thriller,Drama,Romancep</h2>
-                <p className={styles.Hero__description}>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+                <p className={styles.Hero__description}>See the movie is update list</p>
                 <button className={styles.Hero__button}>Watch</button>
             </div>
             <div className={styles.Hero__right}>

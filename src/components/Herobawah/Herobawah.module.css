@@ -13,12 +13,24 @@
     color:blue;
     
 }
+.Wrapper__select {
+    font-size: 8px;
+}
+.keterangan {
+    color: red;
+    font-size: 8px;
+}
 
 .wrapper{
     display: flex;
     flex-direction: column;
 }
-
+.input__year{
+    
+}
+.input__text {
+    
+}
 .herokanan__p {
     color: black;
     margin-top: 5px;
