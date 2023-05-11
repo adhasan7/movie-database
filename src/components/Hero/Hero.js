@@ -1,5 +1,4 @@
 import styles from "./Hero.module.css";
-
 function Hero(){
     return (
         <div className={styles.container}>
@@ -11,8 +10,7 @@ function Hero(){
                 <button className={styles.Hero__button}>Watch</button>
             </div>
             <div className={styles.Hero__right}>
-                 <img className={styles.Hero__img} src="https://picsum.photos/600/400" alt="image" />
-                    
+                 <img className={styles.Hero__img} src="https://picsum.photos/600/400" alt="img" />    
             </div>
         </section>
     </div>

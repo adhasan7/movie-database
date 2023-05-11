@@ -4,7 +4,7 @@ function Footer() {
         <div className={styles.container}>
             <footer>
                 <h1 className={styles.footer__title}>Movie App</h1> 
-                <p className={styles.footer__autor}>Create by Hasan Programmer</p>
+                <p className={styles.footer__autor}>Create by Team Creative</p>
             </footer>
         </div>
     );
