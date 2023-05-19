@@ -15,7 +15,7 @@ function Navbar (){
                         <li className = {styles.Navbar__item}>
                             <Link to="/movie/create">Add Movie </Link> </li>
                         <li className = {styles.Navbar__item}>
-                            <Link to="/movie/popular">Popular</Link></li>
+                            <Link to="/movie/popular">Popular </Link> </li>
                         <li className = {styles.Navbar__item}>
                             <Link to="/movie/now">Now Playing</Link></li>
                         <li className = {styles.Navbar__item}>

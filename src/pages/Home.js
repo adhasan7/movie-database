@@ -6,24 +6,22 @@ import Herobawah from "../components/Herobawah/Herobawah";
 import { useState } from "react";
 import data from "../utils/constants/data";
 
-function Main({ movies, setMovies }) {
-  return (
-    <main>
-       <Hero />
-       <Movies movies={movies} setMovies={setMovies}/>
-    </main>
-  )
-}
+// function Main({ movies, setMovies }) {
+//   return <main> </main>
+  
+// }
 
 function Home() {
   const [movies,setMovies] = useState(data);
   console.log(movies);
   return (
     <div>
-    <Navbar/>
-    <Main movies={movies} setMovies={setMovies} />
+    {/* <Navbar/> */}
+    <Hero />
+       <Movies movies={movies} setMovies={setMovies}/>
+    {/* <Main movies={movies} setMovies={setMovies} /> */}
     <Herobawah movies={movies} setMovies={setMovies} />
-    <Footer/>
+    {/* <Footer/> */}
     </div>
 
  );
