@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 const StyleMovie = styled.div`
   margin-bottom: 1rem;
 
@@ -31,17 +29,3 @@ const StyleMovie = styled.div`
     }
   }
 `;
-
-function Movie(props) {
-  const { movie } = props;
-  return (
-    <StyleMovie>
-      <img src={movie.poster} alt={movie.title} />
-      <h3>{movie.title}</h3>
-      <p>{movie.type}</p>
-      <p>{movie.year}</p>
-    </StyleMovie>
-  );
-}
-
-export default Movie;
