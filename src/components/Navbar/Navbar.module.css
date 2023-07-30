@@ -1,38 +1,46 @@
 /* Small Screen */
 
 .container {
-    background-color: #F72585;
-    padding: 1rem;
-    color: white;
+  background-color: #f72585;
+  padding: 1rem;
+  color: white;
 }
 .Navbar__brand {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .Navbar__list {
-    list-style: none;
+  list-style: none;
+  font-style: none;
 }
 .Navbar__item {
-    margin-bottom: 1rem;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+a {
+  list-style: none;
+  color: white;
+  font-style: none;
+  text-decoration: none;
 }
 
 /* Medium Screen */
-@media (min-width:768px){
-    .Navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .Navbar__brand {
-        margin: 0;
-    }
-    .Navbar__list {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .Navbar__item {
-        margin: 0 1rem;
-    }
-    
+@media (min-width: 768px) {
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Navbar__brand {
+    margin: 0;
+  }
+  .Navbar__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  .Navbar__item {
+    margin: 0 1rem;
+  }
 }
