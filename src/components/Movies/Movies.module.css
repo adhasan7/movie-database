@@ -1,0 +1,26 @@
+/* small screen */
+.Container {
+    padding:1rem;
+    text-align: center;
+}
+.Movies__title {
+    margin-bottom: 1rem;
+    color :#F72585; 
+}
+
+/* screen medium */
+ 
+@media(min-width:768px){
+    .Container {
+        max-width: 1200px;
+        margin:0 auto;
+    }
+    .movie__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+   
+}
+
