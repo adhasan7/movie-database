@@ -22,8 +22,11 @@ function Navbar() {
               <Link to='/movie/now'>Now Playing</Link>
             </li>
             <li className={styles.Navbar__item}>
-              <Link to='movie/top'>Top Rated</Link>
+              <Link to='/movie/top'>Top Rated</Link>
             </li>
+            {/* <li className={styles.Navbar__item}>
+              <Link to='movie/top'>Top Rated</Link>
+            </li> */}
           </ul>
         </div>
       </nav>

@@ -11,7 +11,7 @@ function Navbar() {
           <ul className={styles.Navbar__list}>
             <li className={styles.Navbar__item}>
               <Link to='/'>Home</Link>
-            {/* </li>
+            </li>
             <li className={styles.Navbar__item}>
               <Link to='/movie/create'>Add Movie </Link>{" "}
             </li>
@@ -23,7 +23,7 @@ function Navbar() {
             </li>
             <li className={styles.Navbar__item}>
               <Link to='movie/top'>Top Rated</Link>
-            </li> */}
+            </li>
           </ul>
         </div>
       </nav>
